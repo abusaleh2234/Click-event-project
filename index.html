@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degital Tasbih</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="py-8 text-center">
+        <h1 class="py-5 font-bold text-6xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Degital Tasbih</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+            <div class="bg-base-100 shadow-xl text-center space-y-5 py-5">
+                <h2 class="text-3xl font-bold text-indigo-500">Subhan Allah</h2>
+                <p id="subhanAllahDisplay" class="text-4xl font-medium">0</p>
+                <div class="">
+                    <button id="subhanAllahIncriment" class="btn btn-outline btn-primary">Incriment</button>
+                    <button id="subhanAllahDecriment" class="btn btn-outline btn-secondary">Decriment</button>
+                </div>
+            </div>
+            <div class="bg-base-100 shadow-xl text-center space-y-5 py-5">
+                <h2 class="text-3xl font-bold text-purple-500">Alhamdulilalah</h2>
+                <p id="alhamdulilalahDisplay" class="text-4xl font-medium">0</p>
+                <div class="">
+                    <button id="alhamdulilalahIncriment" class="btn btn-outline btn-primary">Incriment</button>
+                    <button id="alhamdulilalahDecriment" class="btn btn-outline btn-secondary">Decriment</button>
+                </div>
+            </div>
+            <div class="bg-base-100 shadow-xl text-center space-y-5 py-5">
+                <h2 class="text-3xl font-bold text-pink-500">Allahukber</h2>
+                <p id="allahukberDisplay" class="text-4xl font-medium">0</p>
+                <div class="">
+                    <button id="allahukberIncriment" class="btn btn-outline btn-primary">Incriment</button>
+                    <button id="allahukberDecriment" class="btn btn-outline btn-secondary">Decriment</button>
+                </div>
+            </div>
+            
+            
+        </section>
+        <div class=" pt-24 pb-4 text-center">
+            <button id="resetbtn" class="btn btn-error">Reset All Tasbih</button>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
